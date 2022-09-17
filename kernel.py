@@ -9,7 +9,7 @@ def returnmethods(base, code):
         if code[n] == "\n":
             method += "\n"
         n += 1
-    return method
+    return method + ""
 with open("base.conf", encoding='ISO-8859-1') as f:
     base = f.readlines()
 with open("code.conf", encoding='ISO-8859-1') as f:

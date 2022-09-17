@@ -1,2 +1,5 @@
-if 1 < 7:
-	return True
+try:
+	if 1 < 7:
+		print(True)
+except:
+	print("True")
