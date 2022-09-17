@@ -1,17 +1,20 @@
-def convert(lst):
-    return (lst.split())
-def returnmethod(arr, operator):
-    ngram = ""
+def returnmethods(base, code):
+    method = ""
     n = 0
-    for seg in arr:
-        method += operator[seg] 
+    #while( n < len(code)-1):
+        #var = base[int(code[n].strip())].strip()
+        #print(var)
+        #if len(var) > 0 :
+            #method += var
+        #if len(var) == 0:
+            #method += "\n"
+        #n += 1
     return method
-with open("instructor.conf", encoding='ISO-8859-1') as f:
-    text = f.readlines()
-with open("operations.conf", encoding='ISO-8859-1') as f:
-    operator = f.readlines()
+with open("base.conf", encoding='ISO-8859-1') as f:
+    base = f.readlines()
+with open("code.conf", encoding='ISO-8859-1') as f:
+    code = f.readlines()
     f = open("AGI.py", "w", encoding="utf8")
-    for line in text:
-        proc = returnmethod(convert(text),operator)
-        f.write(proc)
-        f.flush
+    proc = returnmethods(base,code)
+    f.write(proc)
+    f.flush
