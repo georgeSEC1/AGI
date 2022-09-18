@@ -7,3 +7,5 @@ find true axioms about code snippets while using translations
 add translations for ULI's
 
 Simulation constraints do not exist, the universe does...
+
+add valid permutations
