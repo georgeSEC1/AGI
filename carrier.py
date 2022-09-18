@@ -19,8 +19,3 @@ def UVG(inferences):
         places = f.readlines()
         place = random.shuffle(places)    
     return convert(gather(inferences,place.strip()))
-try:
-	if 1 < UVG():
-		print(True)
-except:
-	print(False)
