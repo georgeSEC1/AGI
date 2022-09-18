@@ -3,4 +3,5 @@ build UGT's, store as labelled code segments
 build ULI's, works with UGT's
 
 implement algebraic manifolds
-find true axioms about code snippets
+find true axioms about code snippets while using translations
+add translations for ULI's
