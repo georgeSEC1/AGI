@@ -10,7 +10,7 @@ def returnmethods(base, code):
             method += "\n"
         n += 1
     return method + ""
-with open("carrier.py", encoding='ISO-8859-1') as f:
+with open("carrier.conf", encoding='ISO-8859-1') as f:
     carrier = f.read()
 with open("base.conf", encoding='ISO-8859-1') as f:
     base = f.readlines()
