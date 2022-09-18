@@ -16,7 +16,7 @@ with open("base.conf", encoding='ISO-8859-1') as f:
     base = f.readlines()
 with open("manifest.conf", encoding='ISO-8859-1') as f:
     code = f.readlines()
-    f = open("AGI.py", "w", encoding="utf8")
+    f = open("respondent.py", "w", encoding="utf8")
     proc = returnmethods(base,code)
     f.write(carrier)
     f.write(proc.strip())
